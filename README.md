@@ -24,6 +24,7 @@
 | ![芽仔把下一条内容送入机器的场景隐喻](./assets/examples/paper-blue/01-scene-metaphor-16x9-v2.png) | ![以好内容为中心的知识图解](./assets/examples/paper-blue/02-knowledge-diagram-16x9-v2.png) |
 
 <p align="center">
+  <strong>信息可视化 · 高密度</strong><br><br>
   <img src="./assets/examples/paper-blue/03-information-visualization-3x4-v2.png" width="48%" alt="内容创作闭环的信息可视化示例">
 </p>
 
@@ -41,6 +42,8 @@
 
 三种模式都支持 `16:9`、`4:3` 和 `3:4`。比例只改变构图，不删减必要信息。
 
+用户不需要先判断模式，也不需要整理节点、页数或逐字文本。只要提供内容，Skill 会先给出一句简短推荐，然后直接生成；只有两种路线都会明显改变结果时，才会询问一次。
+
 ## 为什么不容易跑偏
 
 - 先写清“3 秒看见什么，随后理解什么”，再开始生成。
@@ -52,42 +55,55 @@
 
 ## 安装
 
-克隆到 Codex Skills 目录：
+克隆到默认的 Codex Skills 目录：
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/Jackywxsz/Jacky-illustration.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/jacky-illustration"
+mkdir -p ~/.codex/skills
+git clone https://github.com/Jackywxsz/Jacky-illustration.git ~/.codex/skills/jacky-illustration
 ```
 
 重新启动 Codex 或开启一个新任务，让 Skill 被重新发现。
 
+<details>
+<summary>使用了自定义 <code>CODEX_HOME</code>？</summary>
+
+把安装目标改为你的 Skills 目录：
+
+```bash
+mkdir -p "$CODEX_HOME/skills"
+git clone https://github.com/Jackywxsz/Jacky-illustration.git "$CODEX_HOME/skills/jacky-illustration"
+```
+
+</details>
+
 ## 使用
 
-### 自动选择模式并生成
+### 最简单的用法
 
 ```text
-使用 $jacky-illustration，把下面这篇文章做成一组正文配图。
-根据内容密度自动选择模式，画幅使用 16:9。
+使用 $jacky-illustration 为下面内容配图：
 
 <粘贴文章>
 ```
+
+Skill 会自己判断信息密度、推荐模式和画幅，并提取必要节点；用户不需要先写生成提示词。
 
 ### 指定知识图解
 
 ```text
 使用 $jacky-illustration，把“为什么好内容需要选题、证据、表达与复盘”
-做成一张 4:3 知识图解。先提炼 3–5 个必要节点，再生成。
+做成知识图解。
 ```
 
 ### 指定高密度信息可视化
 
 ```text
 使用 $jacky-illustration，把下面的流程做成 3:4 信息可视化。
-保留所有步骤名称、日期、数字和单位；内容过载时自动拆页。
 
 <粘贴流程或数据>
 ```
+
+步骤、日期、数字和单位会自动进入逐字核对清单；内容过载时由 Skill 自动拆页。
 
 只需要方案、不需要生图时，明确说“先不要生成，只输出视觉规划”。
 
