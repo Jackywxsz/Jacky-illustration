@@ -1,0 +1,7 @@
+interface:
+  display_name: "Jacky 视觉图解"
+  short_description: "按信息密度生成纸蓝场景隐喻、知识图解和信息可视化，支持三种画幅"
+  brand_color: "#0138C4"
+  default_prompt: "使用 $jacky-illustration，根据内容密度自动选择场景隐喻、知识图解或信息可视化，并选择合适的 16:9、4:3 或 3:4 画幅。"
+policy:
+  allow_implicit_invocation: true
