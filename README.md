@@ -56,7 +56,7 @@
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/Jackywxsz/jacky-illustration.git \
+git clone https://github.com/Jackywxsz/Jacky-illustration.git \
   "${CODEX_HOME:-$HOME/.codex}/skills/jacky-illustration"
 ```
 
