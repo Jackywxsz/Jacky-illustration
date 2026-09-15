@@ -87,7 +87,7 @@
 
 ## 参考图
 
-使用 assets/examples/paper-blue/03-information-visualization-3x4-v2.png 作为浅纸编辑线描画风、手绘路径和高信息密度的第一风格母版。只学习视觉语言，不复制示例步骤、文字、构图或芽仔动作。
+使用 assets/examples/03-information-visualization-16x9.png 作为浅纸编辑线描画风、手绘路径和高信息密度的第一风格母版。只学习视觉语言，不复制示例步骤、文字、构图或芽仔动作。
 
 如需额外的信息架构参考，只能使用已经核实来源并完成脱敏的材料。不得把包含个人账号、私密界面、未经证实的数据、Logo 或品牌截图的旧案例打包进公开 Skill。
 

@@ -5,7 +5,7 @@ The MIT License in this repository applies to the software, Skill instructions, 
 Unless a file says otherwise, the following paths are excluded from the MIT License:
 
 - `assets/ip/`
-- `assets/examples/paper-blue/`
+- `assets/examples/`
 
 Copyright (c) 2026 Jackywxsz. All rights reserved.
 

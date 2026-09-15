@@ -1,7 +1,9 @@
 interface:
-  display_name: "Jacky 视觉图解"
-  short_description: "按信息密度生成纸蓝场景隐喻、知识图解和信息可视化，支持三种画幅"
+  display_name: "纸蓝芽仔图解"
+  short_description: "把文章、教程、流程和数据自动转成统一的纸蓝芽仔视觉图解"
+  icon_small: "./assets/ip/yazai-paper-blue-anchor-v1.png"
+  icon_large: "./assets/ip/yazai-paper-blue-anchor-v1.png"
   brand_color: "#0138C4"
-  default_prompt: "使用 $jacky-illustration 为我提供的内容直接配图：先简短推荐模式与画幅，只有选择会显著改变结果时才询问一次。"
+  default_prompt: "使用 $jacky-illustration，把下面内容做成纸蓝芽仔视觉图解；自动选择合适的模式、画幅和页数。"
 policy:
   allow_implicit_invocation: true
